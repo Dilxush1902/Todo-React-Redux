@@ -1,0 +1,112 @@
+.about {
+  background-color: #000;
+  color: #fff;
+  .container {
+    width: 100%;
+    .row_box {
+      margin-top: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .column_box {
+        width: 45%;
+        padding: 5px;
+        h2 {
+          margin-bottom: 35px;
+          line-height: 35px;
+          text-align: justify-all;
+        }
+        p{
+          text-align: justify;
+          letter-spacing: 1.5px;
+        }
+        .img_box  {
+          width: 100%;
+          border-radius: 10px ;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height:auto;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .about {
+    .container {
+      .row_box {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .column_box {
+          width: 45%;
+          padding: 5px;
+          h2 {
+            margin-bottom: 20px;
+            text-align: left;
+          }
+          p{
+            text-align: justify;
+            letter-spacing: 1px;
+          }
+          .img_box  {
+            //width: 100%;
+            //border-radius: 10px ;
+            //overflow: hidden;
+            img {
+              //width: 100%;
+              //height:auto;
+              //object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px){
+  .about {
+    .container {
+      .row_box {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .column_box {
+          width: 100%;
+          padding: 5px;
+          margin-bottom: 30px;
+          h2 {
+            margin-bottom: 35px;
+            //line-height: 35px;
+            //text-align: justify-all;
+          }
+          p{
+            //text-align: justify;
+            //letter-spacing: 1.5px;
+          }
+          .img_box  {
+            //width: 100%;
+            //border-radius: 10px ;
+            //overflow: hidden;
+            img {
+              //width: 100%;
+              //height:auto;
+              //object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

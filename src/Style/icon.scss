@@ -1,0 +1,34 @@
+.icon_box {
+  position: fixed;
+  z-index: 888;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 45%;
+  a {
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #007bff;
+    svg {
+      font-size: 30px;
+      color: #ffffff;
+    }
+  }
+}
+@media screen and (max-width: 992px){
+  .icon_box {
+    a {
+      display: inline-block;
+      margin: 0 0 10px 10px;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: #007bff;
+      svg {
+        font-size: 25px;
+        color: #ffffff;
+      }
+    }
+  }
+}

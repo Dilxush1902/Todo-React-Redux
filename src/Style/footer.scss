@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #000000;
+  color: #ffffff;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer_title {
+        p {
+          margin: 0;
+        }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  footer {
+    .container {
+      .footer_title {
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  footer {
+    .container {
+      .footer_title {
+        p {
+          margin: 0;
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}

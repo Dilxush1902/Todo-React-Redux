@@ -1,0 +1,200 @@
+.home {
+  position: relative;
+  width: 100% !important;
+  background-image: url(img/home_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .content {
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+  .container {
+    color: #ffffff;
+    display: flex;
+    min-height: 100vh;
+    justify-content: start;
+    align-items: center;
+      .title {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        h3 {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 3px;
+          margin-bottom: 25px;
+        }
+        .title_user {
+          h1:nth-child(1) {
+           margin-right: 30px;
+            color: #007bff;
+          }
+          h1 {
+            display: inline-block;
+            font-size: 55px;
+            margin-bottom: 20px;
+            color: #ffffff;
+          }
+        }
+
+        .skills_icon{
+          span {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin-right: 5px;
+            svg {
+              font-size: 60px;
+            }
+          }
+          span:nth-child(1){
+            background-color: #F0DB4F;
+          }
+          span:nth-child(2){
+            background-color: #212121;
+            svg {
+              color: #68D3F3;
+            }
+          }
+          span:nth-child(3){
+            background-color: #8153C3;
+          }
+        }
+      }
+  }
+  }
+}
+@media screen and (max-width: 768px){
+  .home {
+    .content {
+      width: 100%;
+      background-color: rgba(0,0,0,0.8);
+      .container {
+        color: #ffffff;
+        display: flex;
+        min-height: 100vh;
+        justify-content: start;
+        align-items: center;
+        .title {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          h3 {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+          }
+          .title_user {
+            h1:nth-child(1) {
+              margin-right: 30px;
+              color: #007bff;
+            }
+            h1 {
+              display: inline-block;
+              font-size: 40px;
+              margin-bottom: 20px;
+              color: #ffffff;
+            }
+          }
+
+          .skills_icon{
+            span {
+              display: inline-block;
+              width: 70px;
+              height: 70px;
+              padding: 20px;
+              margin-right: 5px;
+              svg {
+                font-size: 30px;
+              }
+            }
+            span:nth-child(1){
+              background-color: #F0DB4F;
+            }
+            span:nth-child(2){
+              background-color: #212121;
+              svg {
+                color: #68D3F3;
+              }
+            }
+            span:nth-child(3){
+              background-color: #8153C3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  .home {
+    .content {
+      width: 100%;
+      background-color: rgba(0,0,0,0.8);
+      .container {
+        color: #ffffff;
+        display: flex;
+        min-height: 100vh;
+        justify-content: start;
+        align-items: center;
+        .title {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          h3 {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+          }
+          .title_user {
+            h1:nth-child(1) {
+              margin-right: 10px;
+              color: #007bff;
+            }
+            h1 {
+              display: inline-block;
+              font-size: 20px;
+              margin-bottom: 20px;
+              color: #ffffff;
+            }
+          }
+
+          .skills_icon{
+            span {
+              display: inline-block;
+              width: 55px;
+              height: 55px;
+              padding: 15px 20px;
+              margin-right: 5px;
+              svg {
+                font-size: 15px;
+              }
+            }
+            span:nth-child(1){
+              background-color: #F0DB4F;
+            }
+            span:nth-child(2){
+              background-color: #212121;
+              svg {
+                color: #68D3F3;
+              }
+            }
+            span:nth-child(3){
+              background-color: #8153C3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

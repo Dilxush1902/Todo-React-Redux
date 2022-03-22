@@ -1,0 +1,111 @@
+nav {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 999 !important;
+  transition: 0.3s ease;
+  &.active{
+    background-color: #000000;
+    padding: 5px 0;
+  }
+  .container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    a {
+      color: #000000 ;
+      text-decoration: none;
+    }
+    .nav_logo {
+      color: #007bff !important;
+      font-weight: 800 !important;
+      font-size: 28px !important;
+      letter-spacing: 1px;
+    }
+    .nav_item {
+      a {
+        margin: 0 20px;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 1px;
+        &:hover {
+          color: #017BFE;
+        }
+      }
+    }
+    .menu_btn{
+      span {
+        background-color: #007bff !important ;
+        width: 30px ;
+        height: 3px ;
+        opacity: 1 !important;
+        margin: 3px 0;
+        transition: 0.4s ease;
+
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+      }
+}
+@media screen and (max-width: 992px){
+  nav {
+    .nav_item {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content:start;
+      align-items: center;
+      background-color: rgba(0,0,0,0.9);
+      width: 65%;
+      height: 100vh;
+      transform: translateX(100%);
+      transition: transform 0.5s ease;
+      opacity: 0;
+      a {
+        margin-bottom: 20px!important;
+      }
+    }
+    .menu_btn {
+     span {display: block;}
+    }
+    .menu_btn.active {
+      span {
+        display: block !important;
+        width: 30px !important;
+        height: 3px!important;
+        background-color: #ffffff !important;
+        transition:   0.4s ease;
+
+      }
+      span:nth-child(1) {
+        transform:rotate(-40deg) translateY(8px);
+        transition: 0.4s ease;
+      }
+      span:nth-child(2) {
+        transform: translateX(30px);
+        opacity: 0!important;
+      }
+      span:nth-child(3) {
+        transform:rotate(40deg) translateY(-8px) ;
+      }
+    }
+  }
+  .bg_c {
+    background-color: #000000;
+  }
+  .nav_item.active{
+    background-color: rgba(0,0,0,0.9);
+    transform: translateX(0%);
+    transition:transform 0.5s ease ;
+    opacity: 1;
+  }
+}
